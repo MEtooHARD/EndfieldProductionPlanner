@@ -1,13 +1,12 @@
+import { Base } from './struct/Recipe'
 
-import { type Infra, type Item, ProductionLine, type Recipe } from './struct/Recipe';
+const Furnace: Base.Infra = { name: 'Furnace' };
 
-const Furnace: Infra = { name: 'Furnace' };
+const BlueIron: Base.Item = { name: 'Blue Iron' };
 
-const BlueIron: Item = { name: 'Blue Iron' };
+const BlueIronIngot: Base.Item = { name: 'Blue Iron Ingot' };
 
-const BlueIronIngot: Item = { name: 'Blue Iron Ingot' };
-
-const RefineBlueIron: Recipe = {
+const RefineBlueIron: Base.Recipe = {
     name: 'Refine Blue Iron',
     equipment: Furnace,
     inputs: [{ item: BlueIron, amount: 1 }],
@@ -15,4 +14,4 @@ const RefineBlueIron: Recipe = {
     duration: 2
 };
 
-const line = new ProductionLine(RefineBlueIron);
+const line = new Base.ProductionLine(RefineBlueIron);

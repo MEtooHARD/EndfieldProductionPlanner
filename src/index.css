@@ -1,3 +1,7 @@
+@import "tailwindcss";
+
+@tailwind utilities;
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;
@@ -57,7 +61,7 @@
   text-align: center;
   border-inline: 1px solid var(--border);
   min-height: 100svh;
-  display: flex;
+  display: contents;
   flex-direction: column;
   box-sizing: border-box;
 }
@@ -108,4 +112,11 @@ code {
   line-height: 135%;
   padding: 4px 8px;
   background: var(--code-bg);
+}
+
+
+@layer base {
+  html, body {
+    height: 100%;
+  }
 }
