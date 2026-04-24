@@ -1,0 +1,56 @@
+{
+    "items": [
+        {
+            "name": "blue iron ore"
+        },
+        {
+            "name": "blue iron ingot"
+        }
+    ],
+    "infras": [
+        {
+            "name": "furnace"
+        },
+        {
+            "name": "mining machine"
+        }
+    ],
+    "recipes": [
+        {
+            "name": "blue iron refinement",
+            "inputs": [
+                {
+                    "item": "blue iron ore",
+                    "quantity": 1
+                }
+            ],
+            "outputs": [
+                {
+                    "item": "blue iron ingot",
+                    "quantity": 1
+                }
+            ],
+            "duration": 2,
+            "equipment": "furnace"
+        },
+        {
+            "name": "blue iron ore",
+            "inputs": [],
+            "outputs": [
+                {
+                    "item": "blue iron ore",
+                    "quantity": 90
+                }
+            ],
+            "duration": 60,
+            "equipment": "mining machine"
+        }
+    ],
+    "prod_lines": [
+        {
+            "id": "123456",
+            "name": "whatever",
+            "recipe": "blue iron refinement"
+        }
+    ]
+}
