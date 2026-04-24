@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-import RecipeIO from './components/Recipe';
+import RecipeEditor from './components/RecipeEditor';
 import Sidebar from './components/Sidebar';
 import { default_config } from './static_conf';
 import { type Base } from './struct/Recipe';
-import RecipeEditor from './components/RecipeEditor';
 
 
 function App() {

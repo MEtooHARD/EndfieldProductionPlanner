@@ -89,7 +89,8 @@ export const default_config: Base.Config = {
         {
             id: "123456",
             name: "whatever",
-            recipe: "among us"
+            recipe: "among us",
+            type: 'primary'
         }
     ]
 }

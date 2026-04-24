@@ -25,7 +25,8 @@ export default function RecipeManager({ config, add_recipe, del_recipe, update_r
                 set_editing_idx(-1);
             };
         } else { // update existing recipe
-            const success = update_recipe(config.recipes[editing_idx].name, recipe);
+            // const success =
+            update_recipe(config.recipes[editing_idx].name, recipe);
             // if (success) {
             //     set_editing_recipe(null);
             //     set_editing_idx(-1);

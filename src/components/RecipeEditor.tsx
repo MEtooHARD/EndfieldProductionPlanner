@@ -12,7 +12,7 @@ interface Props {
     infras: Base.ConfigInfra[];
 }
 
-export default function RecipeEditor({ recipe, set_recipe, recipes, items, infras }: Props) {
+export default function RecipeEditor({ recipe, set_recipe, items, infras }: Props) {
     const [copy_recipe, set_copy_recipe] = useState<Base.ConfigRecipe>(recipe);
 
     useEffect(() => { set_copy_recipe(recipe); }, [recipe]);

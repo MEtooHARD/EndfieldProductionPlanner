@@ -44,10 +44,13 @@ export namespace Base {
         readonly desc?: string;
     }
 
+    export type ProdLineType = 'primary' | 'auxiliary';
+
     export interface ConfigProductionLine {
         readonly id: string;
         readonly name: string;
         readonly recipe: string;
+        readonly type: ProdLineType;
     }
 
     export interface Config {
@@ -74,5 +77,5 @@ export class ProductionLine {
 }
 
 export class ResourcePool {
-    private resources: Map<string, Base.ItemIO> = new Map();
+    // private resources: Map<string, Base.ItemIO> = new Map();
 }
